@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/task_bottom_margin"
+    android:layout_marginTop="15dp" >
+
+    <TextView
+        android:id="@+id/textView_task_due_date_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_dueDate"
+        android:layout_alignBottom="@+id/textView_dueDate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:text="@string/dueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/checkBox_completion_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_task_name_lv"
+        android:layout_alignBottom="@+id/textView_task_name_lv"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_task_name_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/checkBox_completion_status"
+        android:text="@string/taskLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox_completion_status"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/textView_task_due_date_lv"
+        android:text="@string/dueDateColon"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_task_priority_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_dueDate"
+        android:layout_alignBottom="@+id/textView_dueDate"
+        android:layout_toRightOf="@+id/checkBox_completion_status"
+        android:text="@string/priorityLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

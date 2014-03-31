@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView_display_tasks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_list_name"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button_add_new_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoEditTaskActivity"
+        android:text="Add A New Task" />
+
+    <ListView
+        android:id="@+id/listView_view_containing_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:layout_weight="0.80" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_show_incomplete_in_one_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incomplete" />
+
+        <Button
+            android:id="@+id/button_show_all_in_one_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+        <Button
+            android:id="@+id/button_delete_current_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete This List" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/taskLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_task_EditText_task_name"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="@string/taskHint"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow android:gravity="left" >
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/dueDateLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/edit_task_DatePicker_due_date"
+                android:calendarViewShown="false"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/detailsLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_task_EditText_details"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="task details"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:padding="3dip"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/priorityLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/edit_task_Spinner_priority_level"
+                android:layout_weight="1"
+                android:entries="@array/spinner_priority_level"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/listLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/edit_task_Spinner_list"
+                android:layout_weight="1"
+                android:entries="@array/sample_groups"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/completionLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/edit_task_Spinner_completion_status"
+                android:entries="@array/spinner_completion_status"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button_save_task"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:text="@string/saveButtonString" />
+
+            <Button
+                android:id="@+id/button_clear_task"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:text="@string/clearButtonString" />
+
+            <Button
+                android:id="@+id/button_cancel_editing_task"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelButtonString" />
+        </LinearLayout>
+
+    </TableLayout>
+
+</LinearLayout>

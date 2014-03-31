@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todoonthego"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/todoonthego"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <activity
+            android:name="com.example.todoonthego.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.todoonthego.activity.AddListActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.ViewTasksInOneListActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.ViewAllTasksActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.ViewTaskDetailActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.EditTaskActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.ViewAllLists"></activity>
+        <activity android:name="com.example.todoonthego.activity.AddUserActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.LoginActivity"></activity>
+        <activity android:name="com.example.todoonthego.activity.DeleteUserActivity"></activity>
+        
+     
+    </application>
+
+</manifest>

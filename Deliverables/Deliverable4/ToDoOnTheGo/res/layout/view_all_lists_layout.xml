@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_view_all_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewTasksButtonString"
+        android:onClick="gotoViewAllTasksActivity" />
+
+    <ListView
+        android:id="@+id/listViewForList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.82" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_add_new_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gotoAddListActivity"
+            android:text="@string/addListButtonString" />
+        
+        
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/button_signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSignOut"
+            android:text="@string/signOutButtonString" />
+
+</LinearLayout>

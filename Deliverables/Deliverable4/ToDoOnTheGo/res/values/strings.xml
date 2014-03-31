@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ToDo On the Go</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="activity_main_users">
+        <item>@string/activity_main_user1</item>
+        <item>@string/activity_main_user2</item>
+    </string-array>
+
+    <string name="activity_main_user1">Andy</string>
+    <string name="activity_main_user2">Sherry</string>
+    <string name="list_name">List Name</string>
+    <string name="enter_new_list_name">Enter new list name here</string>
+
+    <string-array name="spinner_priority_level">
+        <item>@string/high</item>
+        <item>@string/medium</item>
+        <item>@string/low</item>
+    </string-array>
+    <string-array name="spinner_completion_status">
+        <item>@string/incomplete</item>
+        <item>@string/completed</item>
+    </string-array>
+
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="completed">Completed</string>
+    <string name="incomplete">Incomplete</string>
+    
+    <string-array name="sample_groups">
+        <item>Group 1</item>
+        <item>Group 2</item>
+        <item>Group 3</item>
+        <item>Group 4</item>
+        <item>Group 5</item>
+        <item>Group 1</item>
+        <item>Group 2</item>
+        <item>Group 3</item>
+        <item>Group 4</item>
+        <item>Group 5</item>
+        <item>Group 1</item>
+        <item>Group 2</item>
+        <item>Group 3</item>
+        <item>Group 4</item>
+        <item>Group 5</item>
+    </string-array>
+    <string name="newUserButtonString">Add A New User</string>
+    <string name="deleteUserButtonString">Delete a User</string>
+    <string name="saveButtonString">Save</string>
+    <string name="userNameLabel">UserName</string>
+    <string name="userNameHint">Enter a User Name</string>
+    <string name="passwordLabel">Password</string>
+    <string name="passwordHint">Enter a password</string>
+    <string name="addUserButtonString">Add User</string>
+    <string name="deleteUserLabel">Choose a User to Delete</string>
+    <string name="completionLabel">Completion Status</string>
+    <string name="clearButtonString">Clear</string>
+    <string name="cancelButtonString">Cancel</string>
+    <string name="listLabel">List</string>
+    <string name="priorityLabel">Priority</string>
+    <string name="detailsHint">Task Details</string>
+    <string name="detailsLabel">Details</string>
+    <string name="dueDateLabel">Due Date</string>
+    <string name="taskHint">Enter Task Name</string>
+    <string name="taskLabel">Task Name</string>
+    <string name="dueLabel">Due</string>
+    <string name="dueDateColon">Due Date:</string>
+    <string name="loginButtonString">Login</string>
+    <string name="viewTasksButtonString">View All Tasks</string>
+    <string name="addListButtonString">Add A New List</string>
+    <string name="signOutButtonString">Sign Out</string>
+
+</resources>
